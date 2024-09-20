@@ -9,6 +9,27 @@ body {
   line-height: 1.6;
 }
 
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: rgb(255, 255, 255);
+  transition: transform 0.2s ease-out;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+ 
+}
+
+
+.header:hover ~ .cursor,
+.team-grid:hover ~ .cursor
+{
+  transform: scale(6);
+}
+
 /* Small screen */
 @media (max-width: 600px) {
   .container {
