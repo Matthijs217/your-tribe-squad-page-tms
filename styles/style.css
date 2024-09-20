@@ -136,6 +136,12 @@ h1 {
     transform: scale(6);
 }
 
+@media (pointer: coarse) {
+    .cursor {
+        display: none;
+    }
+}
+
 /* Responsive voor telefoon */
 @media (min-width: 400px) {
     .text-overlay {

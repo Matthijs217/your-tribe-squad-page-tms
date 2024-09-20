@@ -30,6 +30,12 @@ body {
   transform: scale(6);
 }
 
+@media (pointer: coarse) {
+  .cursor {
+      display: none;
+  }
+}
+
 /* Small screen */
 @media (max-width: 600px) {
   .container {
