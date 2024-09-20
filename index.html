@@ -23,7 +23,7 @@
  
     <div class="img-container">
         <a href="pages/team-page.html">
-        <img src="assets/team.jpg" alt="foto1">
+        <img src="assets/teampage.png" alt="foto1">
         <p class="text-overlay">Team Page</p>
         </a>
     </div>
@@ -35,7 +35,15 @@
         </a>
     </div>
  
-<script src="scripts/index.js"></script>
+    <div class="cursor"></div>
+ 
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        })
+    </script>
  
 </section>
  

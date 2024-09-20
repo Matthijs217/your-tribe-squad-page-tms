@@ -124,6 +124,27 @@ h1 {
 
     line-height: 1;
 }
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    background: rgb(255, 255, 255);
+    transition: transform 0.2s ease-out;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+   
+}
+ 
+ 
+.img-container:hover ~ .cursor
+{
+    transform: scale(6);
+}
+
 /* Responsive voor telefoon */
 @media (min-width: 400px) {
     .text-overlay {
